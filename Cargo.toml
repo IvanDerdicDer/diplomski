@@ -1,0 +1,21 @@
+[package]
+name = "diplomski"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+polars = { version = "0.38.1" }
+deltalake = { version = "0.17.1" }
+rust_decimal = "1.32"
+anyhow = "1.0.75"
+diplomski_projekt = { git = "https://github.com/IvanDerdicDer/diplomski_projekt", version = "1.0.2" }
+rand = "0.8.5"
+chrono = "0.4.34"
+thiserror = "1.0.57"
+
+
+[[bin]]
+name = "data_generator"
+path = "src/data_generator/main.rs"
